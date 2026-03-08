@@ -1,11 +1,9 @@
 import React from 'react';
-import { useNavigate } from 'react-router-dom';
 import { motion } from 'motion/react';
-import { ArrowLeft, Heart, Users, BookOpen, Shield, Zap, Globe } from 'lucide-react';
-import logoUrl from '../logo.png';
+import { Heart, Users, BookOpen, Shield, Zap, Globe } from 'lucide-react';
+import { Navbar, Footer } from '../components/Layout';
 
 const AboutPage = () => {
-  const navigate = useNavigate();
 
   const values = [
     {
@@ -36,7 +34,7 @@ const AboutPage = () => {
     {
       icon: Globe,
       title: "Inclusive",
-      description: "From never married to widowed, divorced to already married, there's something for everyone."
+      description: "Regardless of your relationship or marital status, we have something for everyone."
     }
   ];
 
@@ -69,25 +67,7 @@ const AboutPage = () => {
 
   return (
     <div className="min-h-screen bg-white font-sans text-gray-900 selection:bg-nexus/20 selection:text-nexus">
-      {/* Fixed Navigation */}
-      <nav className="fixed top-0 left-0 right-0 z-50 bg-white/80 backdrop-blur-md border-b border-gray-100">
-        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-          <div className="flex justify-between items-center h-20">
-            <button 
-              onClick={() => navigate('/')}
-              className="flex items-center gap-2 text-gray-600 hover:text-nexus font-medium transition-colors"
-            >
-              <ArrowLeft className="w-5 h-5" />
-              Back
-            </button>
-            <div className="flex items-center gap-2">
-              <img src={logoUrl} alt="Nexus Logo" className="w-8 h-8 rounded-lg" />
-              <span className="text-lg font-bold">Nexus</span>
-            </div>
-            <div className="w-20"></div>
-          </div>
-        </div>
-      </nav>
+      <Navbar />
 
       {/* Hero Section */}
       <section className="pt-32 pb-12 lg:pb-24 bg-gradient-to-b from-nexus/5 to-white">
@@ -101,7 +81,7 @@ const AboutPage = () => {
               About <span className="text-nexus">Nexus</span>
             </h1>
             <p className="text-base sm:text-lg md:text-xl text-gray-600 leading-relaxed">
-              We're building the world's most intentional relationship ecosystem, grounded in faith, guided by experts, and powered by community.
+              We're building the world's most intentional relationship and marriage ecosystem, grounded in faith, and powered by community.
             </p>
           </motion.div>
         </div>
@@ -237,11 +217,13 @@ const AboutPage = () => {
               Join Thousands Building<br/><span className="text-nexus">Kingdom-Centered Relationships</span>
             </h2>
             <p className="text-base sm:text-lg text-gray-600 mb-10 leading-relaxed">
-              Whether you're seeking, healing, or growing, Nexus is here to guide you toward meaningful, faith-filled relationships.
+              Whether you are seeking a life partner, healing from the loss of a partner, or support for your marriage, Nexus is here to guide you on your journey toward stronger, healthier relationships and marriages.
             </p>
             <div className="flex flex-col sm:flex-row gap-4 justify-center">
               <a
-                href="#"
+                href="https://apps.apple.com/us/app/nexus-2-0/id6587567583"
+                target="_blank"
+                rel="noopener noreferrer"
                 className="bg-nexus hover:bg-nexus-dark text-white px-8 py-4 rounded-full font-semibold transition-all shadow-lg shadow-nexus/20 text-base sm:text-lg flex items-center justify-center gap-3"
               >
                 <svg width="22" height="22" viewBox="0 0 24 24" fill="currentColor">
@@ -250,7 +232,9 @@ const AboutPage = () => {
                 Nexus for iOS
               </a>
               <a
-                href="#"
+                href="https://play.google.com/store/apps/details?id=com.nexusapptest.app"
+                target="_blank"
+                rel="noopener noreferrer"
                 className="bg-gray-900 hover:bg-gray-800 text-white px-8 py-4 rounded-full font-semibold transition-all shadow-lg text-base sm:text-lg flex items-center justify-center gap-3"
               >
                 <svg width="22" height="22" viewBox="0 0 24 24" fill="currentColor">
@@ -263,13 +247,7 @@ const AboutPage = () => {
         </div>
       </section>
 
-      {/* Footer */}
-      <footer className="bg-gray-900 text-white py-12 border-t border-gray-800">
-        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
-          <p className="text-gray-400 mb-2">© {new Date().getFullYear()} Nexus. All rights reserved.</p>
-          <p className="text-gray-500">Designed for Kingdom Impact.</p>
-        </div>
-      </footer>
+      <Footer />
     </div>
   );
 };

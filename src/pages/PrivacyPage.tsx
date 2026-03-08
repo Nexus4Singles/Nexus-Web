@@ -1,9 +1,7 @@
 import React from 'react';
-import { ArrowLeft } from 'lucide-react';
-import { useNavigate } from 'react-router-dom';
+import { Navbar, Footer } from '../components/Layout';
 
 export const PrivacyPage = () => {
-  const navigate = useNavigate();
 
   const sections = [
     {
@@ -73,7 +71,7 @@ export const PrivacyPage = () => {
         'Object to or restrict processing in some cases',
         'Withdraw consent (where processing is based on consent)',
       ],
-      footer: 'You can also control certain privacy options inside Nexus (where available). For requests, contact:\n\nnexusgodlydating@gmail.com',
+      footer: 'You can also control certain privacy options inside Nexus (where available). For requests, contact:\n\ncontact@nexus4christians.com',
     },
     {
       number: '6',
@@ -98,27 +96,16 @@ export const PrivacyPage = () => {
     {
       number: '10',
       title: 'CONTACT',
-      content: 'Questions or requests:\n\nnexusgodlydating@gmail.com',
+      content: 'Questions or requests:\n\ncontact@nexus4christians.com',
     },
   ];
 
   return (
     <div className="min-h-screen bg-white">
-      {/* Header */}
-      <div className="sticky top-0 z-40 bg-white border-b border-gray-100">
-        <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 py-4">
-          <button
-            onClick={() => navigate('/')}
-            className="flex items-center gap-2 text-gray-600 hover:text-nexus transition-colors font-medium"
-          >
-            <ArrowLeft className="w-5 h-5" />
-            Back to Home
-          </button>
-        </div>
-      </div>
+      <Navbar />
 
       {/* Content */}
-      <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 py-16">
+      <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 py-16 pt-32">
         <div className="mb-12">
           <h1 className="text-4xl md:text-5xl font-serif font-bold text-gray-900 mb-4">
             Privacy Policy
@@ -180,12 +167,13 @@ export const PrivacyPage = () => {
         <div className="mt-16 pt-8 border-t border-gray-200">
           <p className="text-sm text-gray-600">
             Questions? Contact us at{' '}
-            <a href="mailto:nexusgodlydating@gmail.com" className="text-nexus font-semibold hover:underline">
-              nexusgodlydating@gmail.com
+            <a href="mailto:contact@nexus4christians.com" className="text-nexus font-semibold hover:underline">
+              contact@nexus4christians.com
             </a>
           </p>
         </div>
       </div>
+      <Footer />
     </div>
   );
 };

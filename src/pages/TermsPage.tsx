@@ -1,9 +1,7 @@
 import React from 'react';
-import { ArrowLeft } from 'lucide-react';
-import { useNavigate } from 'react-router-dom';
+import { Navbar, Footer } from '../components/Layout';
 
 export const TermsPage = () => {
-  const navigate = useNavigate();
 
   const sections = [
     {
@@ -110,21 +108,10 @@ export const TermsPage = () => {
 
   return (
     <div className="min-h-screen bg-white">
-      {/* Header */}
-      <div className="sticky top-0 z-40 bg-white border-b border-gray-100">
-        <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 py-4">
-          <button
-            onClick={() => navigate('/')}
-            className="flex items-center gap-2 text-gray-600 hover:text-nexus transition-colors font-medium"
-          >
-            <ArrowLeft className="w-5 h-5" />
-            Back to Home
-          </button>
-        </div>
-      </div>
+      <Navbar />
 
       {/* Content */}
-      <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 py-16">
+      <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 py-16 pt-32">
         <div className="mb-12">
           <h1 className="text-4xl md:text-5xl font-serif font-bold text-gray-900 mb-4">
             Terms of Service
@@ -177,6 +164,7 @@ export const TermsPage = () => {
           </p>
         </div>
       </div>
+      <Footer />
     </div>
   );
 };
