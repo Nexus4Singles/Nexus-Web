@@ -30,10 +30,10 @@ const Hero = () => {
               <span>Introducing Nexus</span>
             </div>
             <h1 className="text-3xl sm:text-4xl md:text-5xl lg:text-5xl font-serif font-bold text-gray-900 leading-[1.1] mb-4 sm:mb-6">
-              A Digital Playbook for building healthy<span className="text-nexus italic">relationships</span> & <span className="text-nexus italic">marriages</span>
+              A Digital Playbook for building healthy<br className="hidden sm:inline" />{' '}<span className="text-nexus italic">relationships</span> & <span className="text-nexus italic">marriages</span>
             </h1>
             <p className="text-sm sm:text-base md:text-lg text-gray-600 mb-6 sm:mb-8 leading-relaxed">
-              A faith-driven relationship and marriage ecosystem committed to raising Godly families for Christ. Whether you are seeking the right partner, rebuilding, or strengthening your marriage, we guide you to grow with intention.
+              A faith-based relationship and marriage ecosystem committed to raising Godly families for Christ. Whether you are seeking the right partner, rebuilding, or strengthening your marriage, we guide you to grow with intention.
             </p>
             
             <div className="flex flex-col sm:flex-row gap-3 sm:gap-4">
