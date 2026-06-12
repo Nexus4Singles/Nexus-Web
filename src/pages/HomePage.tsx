@@ -469,6 +469,115 @@ const FAQ = () => {
   );
 };
 
+const JoinOurTeam = () => {
+  return (
+    <section className="py-24 bg-white relative overflow-hidden">
+      <div className="absolute inset-0 pointer-events-none">
+        <div className="absolute top-0 right-0 w-96 h-96 bg-nexus/10 rounded-full blur-3xl"></div>
+        <div className="absolute bottom-0 left-0 w-72 h-72 bg-nexus/5 rounded-full blur-3xl"></div>
+      </div>
+
+      <div className="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
+        <div className="bg-gradient-to-r from-nexus/10 to-nexus/5 border-2 border-nexus/30 rounded-3xl p-8 sm:p-12 lg:p-16">
+          <div className="grid lg:grid-cols-2 gap-12 items-center">
+            <motion.div
+              initial={{ opacity: 0, x: -20 }}
+              whileInView={{ opacity: 1, x: 0 }}
+              viewport={{ once: true }}
+              transition={{ duration: 0.6 }}
+            >
+              <div className="inline-flex items-center gap-2 px-4 py-2 rounded-full bg-nexus/10 text-nexus font-medium text-sm mb-6">
+                <Star className="w-4 h-4 fill-current" />
+                <span>For Counselors</span>
+              </div>
+              <h2 className="text-3xl sm:text-4xl lg:text-5xl font-serif font-bold text-gray-900 mb-6 leading-tight">
+                Join Our <span className="text-nexus italic">Counselling</span> Team
+              </h2>
+              <p className="text-gray-600 text-base sm:text-lg mb-8 leading-relaxed">
+                We're seeking experienced marriage counselors and relationship coaches to help couples and families build stronger, faith-centered relationships through the Nexus platform. Join a community of professionals dedicated to transforming lives through Christian values.
+              </p>
+              
+              <div className="space-y-4 mb-10">
+                <div className="flex items-start gap-4">
+                  <div className="w-6 h-6 rounded-full bg-nexus text-white flex items-center justify-center flex-shrink-0 mt-1">
+                    <CheckCircle2 className="w-4 h-4" />
+                  </div>
+                  <div>
+                    <h4 className="font-semibold text-gray-900 mb-1">Set Your Own Rates</h4>
+                    <p className="text-gray-600 text-sm">Choose your hourly rate ($20-$100+) and control your availability</p>
+                  </div>
+                </div>
+                <div className="flex items-start gap-4">
+                  <div className="w-6 h-6 rounded-full bg-nexus text-white flex items-center justify-center flex-shrink-0 mt-1">
+                    <CheckCircle2 className="w-4 h-4" />
+                  </div>
+                  <div>
+                    <h4 className="font-semibold text-gray-900 mb-1">Reach Qualified Clients</h4>
+                    <p className="text-gray-600 text-sm">Connect with individuals and couples genuinely seeking professional help</p>
+                  </div>
+                </div>
+                <div className="flex items-start gap-4">
+                  <div className="w-6 h-6 rounded-full bg-nexus text-white flex items-center justify-center flex-shrink-0 mt-1">
+                    <CheckCircle2 className="w-4 h-4" />
+                  </div>
+                  <div>
+                    <h4 className="font-semibold text-gray-900 mb-1">Faith-Aligned Platform</h4>
+                    <p className="text-gray-600 text-sm">Work in an environment dedicated to Christian values and godly relationships</p>
+                  </div>
+                </div>
+              </div>
+
+              <Link 
+                to="/join-as-coach"
+                className="inline-flex items-center gap-2 px-8 py-4 bg-nexus hover:bg-nexus-dark text-white rounded-full font-semibold transition-all shadow-lg shadow-nexus/20 hover:shadow-xl hover:shadow-nexus/30"
+              >
+                Apply Now
+                <ArrowRight className="w-5 h-5" />
+              </Link>
+            </motion.div>
+
+            <motion.div
+              initial={{ opacity: 0, x: 20 }}
+              whileInView={{ opacity: 1, x: 0 }}
+              viewport={{ once: true }}
+              transition={{ duration: 0.6, delay: 0.2 }}
+              className="relative hidden lg:block"
+            >
+              <div className="bg-nexus/20 rounded-3xl p-8 backdrop-blur-sm">
+                <div className="space-y-6">
+                  <div className="bg-white rounded-2xl p-6 shadow-lg">
+                    <div className="inline-block w-12 h-12 bg-nexus/10 rounded-full flex items-center justify-center mb-4">
+                      <Heart className="w-6 h-6 text-nexus" />
+                    </div>
+                    <h4 className="font-semibold text-gray-900 mb-2">Make a Real Impact</h4>
+                    <p className="text-gray-600 text-sm">Help couples strengthen their marriages and build lasting foundations</p>
+                  </div>
+                  
+                  <div className="bg-white rounded-2xl p-6 shadow-lg">
+                    <div className="inline-block w-12 h-12 bg-nexus/10 rounded-full flex items-center justify-center mb-4">
+                      <Shield className="w-6 h-6 text-nexus" />
+                    </div>
+                    <h4 className="font-semibold text-gray-900 mb-2">Verified & Secure</h4>
+                    <p className="text-gray-600 text-sm">All coaches undergo verification to ensure quality and trust</p>
+                  </div>
+                  
+                  <div className="bg-white rounded-2xl p-6 shadow-lg">
+                    <div className="inline-block w-12 h-12 bg-nexus/10 rounded-full flex items-center justify-center mb-4">
+                      <Star className="w-6 h-6 text-nexus" />
+                    </div>
+                    <h4 className="font-semibold text-gray-900 mb-2">Grow Your Practice</h4>
+                    <p className="text-gray-600 text-sm">Expand your reach and build a sustainable counseling business</p>
+                  </div>
+                </div>
+              </div>
+            </motion.div>
+          </div>
+        </div>
+      </div>
+    </section>
+  );
+};
+
 const Download = () => {
   return (
     <section id="download" className="py-24 bg-gray-900 text-white relative overflow-hidden">
@@ -542,8 +651,9 @@ export const HomePage = () => {
         <Features />
         <Audience />
         <Testimonials />
-        <Download />
         <FAQ />
+        <JoinOurTeam />
+        <Download />
       </main>
       <Footer />
     </div>
