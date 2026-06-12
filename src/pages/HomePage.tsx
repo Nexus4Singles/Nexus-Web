@@ -27,7 +27,7 @@ const Hero = () => {
           >
             <div className="inline-flex items-center gap-2 px-4 py-2 rounded-full bg-nexus/10 text-nexus font-medium text-sm mb-6">
               <Star className="w-4 h-4 fill-current" />
-              <span>Introducing Nexus 2.0</span>
+              <span>Introducing Nexus</span>
             </div>
             <h1 className="text-3xl sm:text-4xl md:text-5xl lg:text-5xl font-serif font-bold text-gray-900 leading-[1.1] mb-4 sm:mb-6">
               A Digital Playbook<br className="hidden lg:inline" />{' '}for Godly <span className="text-nexus italic">relationships</span> & <span className="text-nexus italic">marriages</span>
@@ -172,10 +172,10 @@ const Mission = () => {
       <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
         <Quote className="w-12 h-12 text-nexus/20 mx-auto mb-6" />
         <h2 className="text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-serif font-bold text-gray-900 leading-tight mb-6 sm:mb-8">
-          The family is the foundation of society, and strong families begin with healthy, <span className="text-nexus italic">kingdom-centered marriages.</span>
+          Family is the foundation of society, and strong families begin with healthy, <span className="text-nexus italic">kingdom-centered marriages.</span>
         </h2>
         <p className="text-base sm:text-lg md:text-xl text-gray-600 leading-relaxed max-w-3xl mx-auto">
-          Nexus 2.0 is more than a dating app. It is an ecosystem designed to help single, divorced, widowed or married individuals nurture their relationship with God and others, in a bid to build a lifelong, fulfilling marriage.
+          Nexus is more than a dating app. It is an ecosystem designed to help single, divorced, widowed or married individuals nurture their relationship with God and others, in a bid to build a lifelong, fulfilling marriage & family.
         </p>
       </div>
     </section>
@@ -336,10 +336,10 @@ const Audience = () => {
 const Testimonials = () => {
   const testimonials = [
     {
-      name: "Michael & Jennifer",
+      name: "Michael",
       role: "Married through Nexus",
       image: "https://images.unsplash.com/photo-1522529599102-193c0d76b5b6?auto=format&fit=crop&w=100&q=80",
-      text: "Nexus helped us rebuild our marriage after years of struggles. The guided journeys are transformative.",
+      text: "Nexus helped me rebuild my relationship with my wife after years of struggles. The guided journeys are transformative.",
       rating: 5,
     },
     {
@@ -404,7 +404,7 @@ const FAQ = () => {
   const faqs = [
     {
       question: "How do I get started with Nexus?",
-      answer: "Download the app from the App Store or Google Play, create an account with your email, then you can take the assessment, explore journeys, or start connecting with other users based on your preferences."
+      answer: "Download the app from the App Store or Google Play, create an account with your email, then you can take the assessment, explore journeys, or find a life partner based on faith and compatibility."
     },
     {
       question: "Is Nexus really focused on faith-based relationships?",
@@ -527,13 +527,11 @@ const JoinOurTeam = () => {
                 </div>
               </div>
 
-              <Link 
-                to="/join-as-coach"
-                className="inline-flex items-center gap-2 px-8 py-4 bg-nexus hover:bg-nexus-dark text-white rounded-full font-semibold transition-all shadow-lg shadow-nexus/20 hover:shadow-xl hover:shadow-nexus/30"
-              >
-                Apply Now
-                <ArrowRight className="w-5 h-5" />
-              </Link>
+              <div className="bg-gradient-to-r from-blue-50 to-blue-100 border-2 border-blue-300 rounded-2xl p-6 sm:p-8">
+                <p className="text-gray-800 text-base sm:text-lg leading-relaxed">
+                  If you're a qualified and licensed relationship, marriage or family therapist, send an email to <a href="mailto:contact@nexus4christians.com" className="text-blue-600 font-bold hover:underline cursor-pointer">contact@nexus4christians.com</a> to join our counselling team.
+                </p>
+              </div>
             </motion.div>
 
             <motion.div
