@@ -21,7 +21,7 @@ export const Navbar = () => {
             <Link to="/about" className="text-gray-600 hover:text-nexus font-medium transition-colors">About</Link>
             <Link to="/#features" className="text-gray-600 hover:text-nexus font-medium transition-colors">Features</Link>
             {/* <Link to="/payments" className="text-gray-600 hover:text-nexus font-medium transition-colors">Pricing</Link> */}
-            <Link to="/join-as-coach" className="text-gray-600 hover:text-nexus font-medium transition-colors">Counselling Team</Link>
+            <Link to="/#counselling" className="text-gray-600 hover:text-nexus font-medium transition-colors">Counselling Team</Link>
             <a
               href="/#download"
               className="bg-nexus hover:bg-nexus-dark text-white px-6 py-2.5 rounded-full font-medium transition-all shadow-lg shadow-nexus/20 flex items-center gap-2"
@@ -53,7 +53,7 @@ export const Navbar = () => {
               <Link to="/about" onClick={() => setIsOpen(false)} className="block px-3 py-2 text-sm sm:text-base font-medium text-gray-900 hover:text-nexus hover:bg-gray-50 rounded-lg">About</Link>
               <Link to="/#features" onClick={() => setIsOpen(false)} className="block px-3 py-2 text-sm sm:text-base font-medium text-gray-900 hover:text-nexus hover:bg-gray-50 rounded-lg">Features</Link>
               {/* <Link to="/payments" onClick={() => setIsOpen(false)} className="block px-3 py-2 text-sm sm:text-base font-medium text-gray-900 hover:text-nexus hover:bg-gray-50 rounded-lg">Pricing</Link> */}
-              <Link to="/join-as-coach" onClick={() => setIsOpen(false)} className="block px-3 py-2 text-sm sm:text-base font-medium text-gray-900 hover:text-nexus hover:bg-gray-50 rounded-lg">Counselling Team</Link>
+              <Link to="/#counselling" onClick={() => setIsOpen(false)} className="block px-3 py-2 text-sm sm:text-base font-medium text-gray-900 hover:text-nexus hover:bg-gray-50 rounded-lg">Counselling Team</Link>
               <a href="/#download" onClick={() => setIsOpen(false)} className="block px-3 py-2 text-sm sm:text-base font-medium text-nexus bg-nexus/10 rounded-lg flex items-center gap-2">
                 <Smartphone className="w-5 h-5" />
                 Download App

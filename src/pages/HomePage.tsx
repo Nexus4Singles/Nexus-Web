@@ -30,7 +30,7 @@ const Hero = () => {
               <span>Introducing Nexus</span>
             </div>
             <h1 className="text-3xl sm:text-4xl md:text-5xl lg:text-5xl font-serif font-bold text-gray-900 leading-[1.1] mb-4 sm:mb-6">
-              A Digital Playbook<br className="hidden lg:inline" />{' '}for Godly <span className="text-nexus italic">relationships</span> & <span className="text-nexus italic">marriages</span>
+              A Digital Playbook for building healthy<span className="text-nexus italic">relationships</span> & <span className="text-nexus italic">marriages</span>
             </h1>
             <p className="text-sm sm:text-base md:text-lg text-gray-600 mb-6 sm:mb-8 leading-relaxed">
               A faith-driven relationship and marriage ecosystem committed to raising Godly families for Christ. Whether you are seeking the right partner, rebuilding, or strengthening your marriage, we guide you to grow with intention.
@@ -202,7 +202,7 @@ const Features = () => {
           <path d="M12 6v6l4 2" strokeLinecap="round"/>
         </svg>
       ),
-      title: "Assessments",
+      title: "Personalized Assessments",
       description: "Discover your strengths and growth areas through personalized assessments that help singles evaluate their readiness for marriage, support divorced or widowed individuals considering remarriage, and help couples assess the health of their marriage.",
       bgColor: "bg-purple-100",
       iconColor: "text-purple-600"
@@ -471,7 +471,7 @@ const FAQ = () => {
 
 const JoinOurTeam = () => {
   return (
-    <section className="py-24 bg-white relative overflow-hidden">
+    <section id="counselling" className="py-24 bg-white relative overflow-hidden">
       <div className="absolute inset-0 pointer-events-none">
         <div className="absolute top-0 right-0 w-96 h-96 bg-nexus/10 rounded-full blur-3xl"></div>
         <div className="absolute bottom-0 left-0 w-72 h-72 bg-nexus/5 rounded-full blur-3xl"></div>
@@ -527,9 +527,9 @@ const JoinOurTeam = () => {
                 </div>
               </div>
 
-              <div className="bg-gradient-to-r from-blue-50 to-blue-100 border-2 border-blue-300 rounded-2xl p-6 sm:p-8">
+              <div className="bg-gradient-to-r from-nexus/10 to-nexus/5 border-2 border-nexus/30 rounded-2xl p-6 sm:p-8">
                 <p className="text-gray-800 text-base sm:text-lg leading-relaxed">
-                  If you're a qualified and licensed relationship, marriage or family therapist, send an email to <a href="mailto:contact@nexus4christians.com" className="text-blue-600 font-bold hover:underline cursor-pointer">contact@nexus4christians.com</a> to join our counselling team.
+                  If you're a qualified and licensed relationship, marriage or family therapist, send an email to <a href="mailto:contact@nexus4christians.com" className="text-nexus font-bold hover:underline cursor-pointer">contact@nexus4christians.com</a> to join our counselling team.
                 </p>
               </div>
             </motion.div>
