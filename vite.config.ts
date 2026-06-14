@@ -18,6 +18,9 @@ export default defineConfig(({mode}) => {
     server: {
       // Disable HMR to prevent WebSocket connection errors and flickering
       hmr: false,
+      // Enable SPA fallback for client-side routing
+      middlewareMode: false,
+      historyApiFallback: true,
     },
   };
 });
