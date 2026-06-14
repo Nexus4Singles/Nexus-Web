@@ -6,6 +6,7 @@ import {defineConfig, loadEnv} from 'vite';
 export default defineConfig(({mode}) => {
   const env = loadEnv(mode, '.', '');
   return {
+    publicDir: 'public',
     plugins: [react(), tailwindcss()],
     define: {
       'process.env.GEMINI_API_KEY': JSON.stringify(env.GEMINI_API_KEY),
@@ -21,6 +22,10 @@ export default defineConfig(({mode}) => {
       // Enable SPA fallback for client-side routing
       middlewareMode: false,
       historyApiFallback: true,
+    },
+    build: {
+      // Ensure proper caching headers for favicons
+      assetsInlineLimit: 0,
     },
   };
 });
