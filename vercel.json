@@ -4,11 +4,11 @@
       "handle": "filesystem"
     },
     {
-      "src": "/app-ads\.txt",
+      "src": "/app-ads\\.txt",
       "dest": "/app-ads.txt"
     },
     {
-      "src": "/favicon\.png",
+      "src": "/favicon\\.png",
       "dest": "/favicon.png"
     },
     {
