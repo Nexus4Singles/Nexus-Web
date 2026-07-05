@@ -1,13 +1,7 @@
 {
-  "beforeFiles": [
-    {
-      "source": "/app-ads.txt",
-      "destination": "/app-ads.txt"
-    }
-  ],
   "rewrites": [
     {
-      "source": "/(.*)",
+      "source": "^/(?!.*\\.)(.*)$",
       "destination": "/index.html"
     }
   ],
